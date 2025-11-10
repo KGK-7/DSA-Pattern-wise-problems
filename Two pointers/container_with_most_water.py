@@ -1,3 +1,4 @@
+from typing import List
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         left = 0
@@ -16,3 +17,5 @@ class Solution:
             else:
                 right -= 1
         return max_area
+
+print(Solution().maxArea([1,8,6,2,5,4,8,3,7]))  # Output: 49
